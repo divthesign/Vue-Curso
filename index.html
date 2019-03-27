@@ -10,12 +10,15 @@
 <body>
     <div id="app">
         <h1>{{titulo}}</h1>
+        <!-- v-model conecta el HTML con el JavaScript -->   
+        <input type="text" v-model="nuevaFruta" > 
+        <button type="button" @click="agregarFruta">Agregar</button>
         <ul>
-            <li v-for="lista of menu"><a href="#">{{lista.nombre}}</a></li>
+            <li v-for="fruta of frutas">{{fruta.nombre}}</li>
         </ul>
         <div v-for="fruta of frutas">
             <p class="frutas" v-if="fruta.cantidad === 0">El stock del {{fruta.nombre}} es 0 </p>
-        </div>    
+        </div>
 
 
     </div>
