@@ -11,8 +11,13 @@
     <div id="app">
         <h1>{{titulo}}</h1>
         <ul>
-            <li v-for="lista of menu">{{lista.nombre}}</li>
+            <li v-for="lista of menu"><a href="#">{{lista.nombre}}</a></li>
         </ul>
+        <div v-for="fruta of frutas">
+            <p class="frutas" v-if="fruta.cantidad === 0">El stock del {{fruta.nombre}} es 0 </p>
+        </div>    
+
+
     </div>
 
 

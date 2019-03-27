@@ -22,3 +22,14 @@ li{
     padding: 1rem;
     list-style: none;
 }
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.frutas{
+    padding: 3rem;
+    background: rgb(180, 230, 250);
+    margin: 3rem;
+    text-align: center;
+}
