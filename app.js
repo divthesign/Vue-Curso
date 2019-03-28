@@ -12,7 +12,9 @@ const app = new  Vue({
             {nombre: 'Platano', cantidad: 0},
             {nombre: 'Pera', cantidad: 1},
         ],
-        nuevaFruta: ''
+        nuevaFruta: '',
+
+        fondo: 'bg-warning'
     },
     methods: {
         agregarFruta(){
