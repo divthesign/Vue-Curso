@@ -26,6 +26,10 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, consequuntur doloribus molestias ullam corporis quo maiores atque quas repudiandae aspernatur reprehenderit! Repellat asperiores officia labore soluta neque mollitia ex fugit?</p>
             </div>
             <input type="text" class="form-control my-3" v-model="fondo">
+            <div class="container text-white p-3" :class="{'bg-info' : color, 'bg-primary' : !color}">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dignissimos ullam, obcaecati corporis eos atque repellendus voluptate sequi ipsam. Recusandae, tempora non rem sint eligendi consequatur fuga. Ducimus facere voluptates iure!</p>
+            </div>
+            <button class="btn btn-primary m-3" @click="color = !color">Cambiar color</button>
         </div>
 
 
